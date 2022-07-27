@@ -1,0 +1,70 @@
+1658237866270	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1658238466270	Sync.Service	DEBUG	User-Agent: Firefox/102.0.1 (Linux x86_64) FxSync/1.104.0.20220706125320.desktop
+1658238466270	Sync.Service	INFO	Starting sync at 2022-07-19 08:47:46 in browser session xfuLjUfqa7au
+1658238466270	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1658238466274	Sync.Status	INFO	Resetting Status.
+1658238466274	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1658238466274	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1658238466274	FirefoxAccounts	DEBUG	getOAuthToken enter
+1658238466275	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1658238466275	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1658238466275	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1658238466586	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/196026946/info/collections
+1658238466586	Sync.Service	DEBUG	Fetching server configuration: https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/196026946/info/configuration
+1658238466634	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/196026946/info/configuration
+1658238466634	Sync.Service	DEBUG	Fetching global metadata record
+1658238466634	Sync.Service	DEBUG	Weave Version: 1.104.0 Local Storage: 5 Remote Storage: 5
+1658238466634	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1658238466634	Sync.Service	INFO	Testing info/collections: {"prefs":1658102890.79,"clients":1658205104.26,"bookmarks":1658208624.16,"meta":1650811989.88,"addons":1658168478.9,"forms":1658143106.53,"tabs":1658205104.66,"creditcards":1650811388.07,"crypto":1649792416.62,"history":1658226449.21,"passwords":1657592284.99,"extension-storage":1658236183.35}
+1658238466634	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 1649792416.62
+1658238466634	Sync.Synchronizer	DEBUG	Refreshing client list.
+1658238466635	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1658238466683	Sync.Collection	DEBUG	GET fail 503 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/196026946/storage/clients?full=1&limit=1000
+1658238466683	Sync.Collection	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/196026946/storage/clients?full=1&limit=1000 failed with status 503
+1658238466684	Sync.ErrorHandler	DEBUG	Got Retry-After: 3600
+1658238466684	Sync.Status	DEBUG	Status.sync: success.sync => error.sync.reason.serverMaintenance
+1658238466684	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed
+1658238466684	Sync.SyncScheduler	DEBUG	Got backoff notification: 3600000ms
+1658238466684	Sync.SyncScheduler	DEBUG	Fuzzed minimum next sync: 1658242066684
+1658238466684	Sync.Status	DEBUG	Status for engine clients: error.engine.reason.record_download_fail
+1658238466684	Sync.Status	DEBUG	Status.service: error.sync.failed => error.sync.failed_partial
+1658238466684	Sync.Collection	WARN	Got exception parsing response body: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data(resource://services-sync/resource.js:229:21) JS Stack trace: _processResponse/<@resource.js:229:21
+get@XPCOMUtils.jsm:62:51
+format@Log.jsm:648:19
+formatText@Log.jsm:577:44
+format@Log.jsm:595:12
+append@Log.jsm:688:37
+append@logmanager.js:156:44
+log@Log.jsm:385:16
+debug@Log.jsm:405:10
+observe@policies.js:866:21
+observe@observers.js:135:21
+notify@observers.js:87:18
+notify@util.js:195:19
+WrappedNotify@util.js:205:17
+1658238466684	Sync.Collection	DEBUG	Parse fail: Response body starts: <html>
+<head><title>503 Service Unavailable</title></head>
+<body bgcolor="white">
+<center><h1>503 Se
+1658238466684	Sync.ErrorHandler	DEBUG	clients failed: ({data:"<html>\n<head><title>503 Service Unavailable</title></head>\n<body bgcolor=\"white\">\n<center><h1>503 Service Cloudy: Try again later. </h1></center>\n</body>\n</html>\n", url:"https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/196026946/storage/clients?full=1&limit=1000", status:503, success:false, headers:{'alt-svc':"clear", 'content-length':"162", 'content-type':"text/html", date:"Tue, 19 Jul 2022 13:47:46 GMT", etag:"\"62d64883-a2\"", 'retry-after':"3600", server:"openresty/1.15.8.2", via:"1.1 google", 'x-firefox-spdy':"h2"}, get obj() {
+        if (!redefining) {
+          // Make sure we don't get into an infinite recursion loop if
+          // the getter lambda does something shady.
+          redefining = true;
+          return redefine(aObject, aName, aLambda.apply(aObject));
+        }
+      }, failureCode:"error.engine.reason.record_download_fail"})
+1658238466684	Sync.Synchronizer	INFO	Updating enabled engines: 2 clients.
+1658238466685	Sync.Synchronizer	INFO	Syncing all enabled engines.
+1658238466685	Sync.Engine.Prefs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1658238466686	Sync.Engine.Prefs	INFO	Uploading 0 outgoing records
+1658238466686	Sync.Synchronizer	INFO	Aborting sync for failure in prefs
+1658238466686	Sync.Doctor	INFO	Skipping validation: no engines qualify
+1658238466686	Sync.Synchronizer	INFO	Sync completed at 2022-07-19 08:47:46 after 0.41 secs.
+1658238466686	Sync.Declined	DEBUG	Handling remote declined: []
+1658238466686	Sync.Declined	DEBUG	Handling local declined: []
+1658238466686	Sync.Declined	DEBUG	Declined changed? false
+1658238466686	Sync.Service	INFO	No change to declined engines. Not reuploading meta/global.
+1658238466686	Sync.ErrorHandler	ERROR	Some engines did not sync correctly.
+1658238466687	Sync.SyncScheduler	DEBUG	Starting client-initiated backoff. Next sync in 3891726.4875445096 ms.
+1658238466687	Sync.SyncScheduler	DEBUG	Next sync in 3891726.4875445096 ms. (why=client-backoff-schedule)

@@ -1,0 +1,44 @@
+1658455883443	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1658455891265	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1658455892967	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1658455903857	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1658455905688	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1658455914318	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1658455916153	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1658455918114	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1658455928154	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1658455929607	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1658455940247	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1658455942221	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1658455952389	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1658455954567	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1658455964601	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1658455966807	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1658455974581	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1658455976964	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1658455978407	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1658455989164	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1658455991261	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1658456001177	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1658456002674	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1658456007390	Sync.SyncScheduler	DEBUG	Going to sleep, doing a quick sync.
+1658456007390	Sync.Service	DEBUG	User-Agent: Firefox/102.0.1 (Linux x86_64) FxSync/1.104.0.20220706125320.desktop
+1658456007391	Sync.Service	INFO	Starting sync at 2022-07-21 21:13:27 in browser session qXhFfAfv9IZj
+1658456007391	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1658456007392	Sync.Status	INFO	Resetting Status.
+1658456007392	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1658456007393	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1658456007393	FirefoxAccounts	DEBUG	getOAuthToken enter
+1658456007393	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1658456007393	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1658456007393	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1658456010561	Sync.SyncScheduler	DEBUG	Network link status changed to "down". Offline?: false
+1658456010561	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1658456010563	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1658456010565	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1658456014946	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/196026946/info/collections failed: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available
+1658456014946	Sync.Status	DEBUG	Status.sync: success.sync => error.login.reason.network
+1658456014946	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed
+1658456014946	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available
+1658456014947	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=reschedule)
+1658456014949	Sync.Service	DEBUG	Exception calling anonymous function: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available
